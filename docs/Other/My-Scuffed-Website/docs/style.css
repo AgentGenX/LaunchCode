@@ -1,0 +1,25 @@
+body {
+    background: rgb(199, 195, 195);
+    color: #323232;
+    justify-content: center;
+    text-align: center;
+}
+
+p {
+    font-size: 60px;
+    color: rgb(211, 50, 50);
+}
+
+img {
+    display: inline;
+}
+
+h2 {
+    display: inline;
+    color: rgb(30, 30, 209);
+    position: relative;
+    top: -125px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 50px;
+}

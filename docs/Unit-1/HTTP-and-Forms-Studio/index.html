@@ -1,0 +1,46 @@
+<!doctype html>
+
+<head>
+	<meta charset="utf-8">
+	<script>
+		window.addEventListener("load", function() {
+
+			document.getElementById("go").addEventListener("click", setSearchEngine);
+
+			let temp = document.getElementById("searchForm");
+
+			let actions = {
+				google: "https://www.google.com/search",
+				duckDuckGo: "https://www.duckduckgo.com/",
+				bing: "https://www.bing.com/",
+				ask: "https://www.ask.com/web/"
+			};
+
+			function setSearchEngine() {
+
+				let getEngine = document.querySelector("input[name=engine]:checked");
+
+				if (getEngine.value === "google") {
+					temp.setAttribute("action", actions.google);
+				} else if (getEngine.value === "duckDuckGo") {
+					temp.setAttribute("action", actions.duckDuckGo);
+				} else if (getEngine.value === "bing") {
+					temp.setAttribute("action", actions.bing);
+				} else if (getEngine.value === "ask") {
+					temp.setAttribute("action", actions.ask);
+				}
+			};
+		});
+	</script>
+</head>
+
+<body>
+	<form id="searchForm" method="GET">
+		<input type="text" name="q" />
+		<label>Google<input type="radio" name="engine" value="google" /></label>
+		<label>DuckDuckGo<input type="radio" name="engine" value="duckDuckGo" /></label>
+		<label>Bing<input type="radio" name="engine" value="bing" /></label>
+		<label>Ask<input type="radio" name="engine" value="ask" /></label>
+		<button id="go">Go!</button>
+	</form>
+</body>

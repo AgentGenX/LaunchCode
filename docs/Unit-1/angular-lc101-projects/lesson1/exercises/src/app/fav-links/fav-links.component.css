@@ -1,0 +1,13 @@
+.center {
+    text-align: center;
+}
+
+p {
+    text-decoration-line: underline;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+a {
+    font-size: 20px;
+}

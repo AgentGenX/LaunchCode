@@ -1,0 +1,42 @@
+<div class="container">
+   <div class="container-header">
+      <h1>Flight Simulator</h1>
+      <h2>Current Flight Status</h2>
+      <p>{{message}}</p>
+      <h2>Shuttle Trajectory</h2>
+   </div>
+   <div class="row justify-content-center">
+      <div class="col-3">
+         <div class="container-left">
+            <h3>Fuel Levels</h3>
+            <p>Tank Full</p>
+            <h3>Astronaut Chat</h3>
+            <p>Houston, we are ready when you are!</p>
+         </div>
+      </div>
+
+      <div class="col-6">
+         <div class="shuttle-background" [style.backgroundColor]="color">
+            <img #rocketImage src="assets/images/LaunchCode_rocketline_white.png" height = "75" width = "75" [style.left]="0" [style.bottom]="0"/>
+         </div>
+      </div>
+
+      <div class="col-3">
+         <div class="container-right"b>
+            <div *ngIf="!takeOffEnabled">
+               <button (click)="moveRocket(rocketImage, 'up')" (click)="closeToEdge()">Up</button>
+               <button (click)="moveRocket(rocketImage, 'down')" (click)="closeToEdge()">Down</button>
+               <button (click)="moveRocket(rocketImage, 'left')" (click)="closeToEdge()">Left</button>
+               <button (click)="moveRocket(rocketImage, 'right')" (click)="closeToEdge()">Right</button>
+            </div>
+            <h3>Space Shuttle Height</h3>
+            <p>{{height}} km</p>
+         </div>
+      </div>
+   </div>
+   <div class="container-control-buttons">
+      <button (click) = "handleTakeOff()" [disabled]="!takeOffEnabled">Take Off</button>
+      <button (click) = "handleLanding(rocketImage)" [disabled]="takeOffEnabled">Land</button>
+      <button (click) = "handleAbort(rocketImage)" [disabled]="takeOffEnabled">Abort Mission</button>
+   </div>
+</div>

@@ -1,0 +1,147 @@
+header {
+    padding: 5px 0 10px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 30px;
+    color: rgb(221, 13, 13);
+    /* text-decoration: underline; */
+    /* text-shadow: 2px 2px 2px rgb(49, 48, 48); */
+}
+
+p {
+    text-align: justify;
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.author {
+    font-size: 15px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+}
+
+.beg-end {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    padding: 40px 0 50px;
+    font-size: 23px;
+    font-family: 'Lora', serif;
+}
+
+.para-1 {
+    padding-left: 50px;
+    padding-right: 280px;
+}
+
+.para-2 {
+    padding-left: 250px;
+    padding-right: 50px;
+}
+
+.para-3 {
+    padding-left: 50px;
+    padding-right: 260px;
+}
+
+.para-4 {
+    padding-left: 200px;
+    padding-right: 50px;
+}
+
+.para-5 {
+    padding-left: 50px;
+    padding-right: 340px;
+}
+
+.para-6 {
+    padding-left: 325px;
+    padding-right: 50px;
+}
+
+.para-7 {
+    padding-left: 50px;
+    padding-right: 305px;
+}
+
+article {
+    margin: 0 auto;
+    width: 900px;
+    background-color: beige;
+    border: 1px solid #000000;
+}
+
+section {
+    display: inline-block;
+    border: 1px solid #000000;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-1 {
+    height: 154px;
+    width: 1000px;
+}
+
+.img-2 {
+    float: right;
+    height: 300px;
+    width: 234px;
+}
+
+.img-3 {
+    float: left;
+    height: 300px;
+    width: 200px;
+}
+
+.img-4 {
+    float: right;
+    height: 300px;
+    width: 206px;
+}
+
+.img-5 {
+    float: left;
+    height: 300px;
+    width: 150px;
+}
+
+.img-6 {
+    float: right;
+    height: 300px;
+    width: 287px;
+}
+
+.img-7 {
+    float: left;
+    height: 300px;
+    width: 277px;
+}
+
+.img-8 {
+    float: right;
+    height: 300px;
+    width: 256px;
+}
+
+.video {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
